@@ -1,0 +1,165 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset1 Cambria Math;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\listtable 
+{\list\listhybrid
+{\listlevel\levelnfc23\leveljc0\levelstartat1{\leveltext\'01\'B7;}{\levelnumbers;}\f2\jclisttab\tx0}
+{\listlevel\levelnfc0\leveljc0\levelstartat1{\leveltext\'02\'01.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc4\leveljc0\levelstartat1{\leveltext\'02\'02.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc3\leveljc0\levelstartat1{\leveltext\'02\'03.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc2\leveljc0\levelstartat1{\leveltext\'02\'04.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc1\leveljc0\levelstartat1{\leveltext\'02\'05.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc0\leveljc0\levelstartat1{\leveltext\'02\'06.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc4\leveljc0\levelstartat1{\leveltext\'02\'07.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc23\leveljc1\levelstartat1{\leveltext\'01\'B7;}{\levelnumbers;}\f2\jclisttab\tx0}\listid1 }}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+{\*\generator Riched20 10.0.19041}{\*\mmathPr\mmathFont1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\ul\b\f0\fs24\lang9 Software Requirements specification- CAB MANAGEMENT SYSTEM\fs22\par
+\ulnone 1. \ul INTRODUCTION\par
+\ulnone CAB SERVICE MANAGEMENT is a major transport service provided by the various transport operators in a particular city which enables users to travel from one place to another according to their needs which can done by choosing the locations which they need to travel.it should provide functionality for customers to make their bookings,give the facility to make payments by means of offline/ online mode of payment, to generate invoice, track your customers,engage your customers through feedback forms.\par
+1.1. Purpose:\par
+The purpose of the SRS document is to specify the requirements of the both the cab masters and customers.it is intended to be a complete specification of what functionality the system provides.The main purpose of the system is to connect the driver with passenger,who books the cab for their availabilty.\par
+1.2. Scope:\par
+The purpose of the cab management system is to ease cab management and to create convenient and easy -to-use applications online for passengers who trying to book cabs.it can help peoples to travel from one place to another without the hassle of going outside and booking a taxi,which can be difficult if they are in remote area where no taxi is available in usually .likely it also helps cab drivers to get more customers easily through this online means of booking .the main constraint ,time which can be utilise effectively for both drivers and customers\par
+2. \ul OVERALL DESCRIPTION\par
+\ulnone This system provides the users:\ul\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone  Cab search facility\tab\par
+{\pntext\f2\'B7\tab}Login facility with two authentication such as captcha and a picture[ OTP will be added later]\tab\par
+{\pntext\f2\'B7\tab}Passenger profile info to be captured\par
+{\pntext\f2\'B7\tab}Cab master details shall be captured\par
+{\pntext\f2\'B7\tab}Cab schedule details with fare shall be maintained[ fare can change depending on when they book]\par
+{\pntext\f2\'B7\tab}Cab ticket booking details with tax shall be stored \par
+{\pntext\f2\'B7\tab}Payment shall be collected and invoice shall be given to the customer\par
+{\pntext\f2\'B7\tab}Feedback shall be collected\b0\par
+
+\pard\sa200\sl276\slmult1\b 2.1 PRODUCT PERSPECTIVE\par
+A cab management system stores the following information:\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li720\sa200\sl276\slmult1 Cab details\b0  - \b it includes cab number, driver's details, driver's rating and review ,area's which cab is available,number of seats.\b0\par
+{\listtext\f0 1.\tab}\b Customer description- it includes customer's first and last name,phone number,e-mail id.customer can edit their profile whenever they want.\b0\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\ilvl8\fi-360\li720\sa200\sl276\slmult1\b booking description -it includes customer details,driver details,booking number,cab details,date and time of booking,date of travel,distance,pickup and dropoff points and total fare.\b0\par
+
+\pard\sa200\sl276\slmult1\b 3. \ul FUNCTIONAL REQUIREMENTS\ulnone\par
+\ul\i CUSTOMER FUNCTIONS :\i0\par
+REGISTER\par
+\ulnone Through this we can register ,to every customers for their ride they need to register first by providing details such as,\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Text fields for user's first name and last name\par
+{\pntext\f2\'B7\tab}A field for collecting phone number with default country code set to india.\par
+{\pntext\f2\'B7\tab}A field for address with pincode.\par
+{\pntext\f2\'B7\tab}A text field for entering user email,alert user if it it not email format,with an invalid message\par
+{\pntext\f2\'B7\tab}A text field for user password which is alphanumerical with min 8 characters.\par
+{\pntext\f2\'B7\tab}A button for navigating to user login page\par
+{\pntext\f2\'B7\tab}Submit button for validating both email and password,if they already exists alert user to change them.\par
+
+\pard\sa200\sl276\slmult1\ul LOGIN\par
+\ulnone For customers need to login to their account respectively and to view their previous activities and to book their next ride.need details such as,\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 A text field should be there for collecting user email as input,it should show error meaasage to the user if the entered data is not in email format\par
+{\pntext\f2\'B7\tab}A text field collecting password which has an input type alphanumerical, with a min 8 characters\par
+{\pntext\f2\'B7\tab}submit button which validate email and password,if any one of them wrong alert user with invalid message\par
+{\pntext\f2\'B7\tab}button to navigating to forgot password\par
+{\pntext\f2\'B7\tab}button for navigating signup page\par
+{\pntext\f2\'B7\tab}button for navigating admin login page.\par
+
+\pard\sa200\sl276\slmult1\ul LOGINED USER CAN PROVIDE FUNCTIONALITY :\par
+\ulnone SEARCH :\ul\par
+
+\pard\sa200\sl276\slmult1\ulnone Will provide cab search facility,search filtered based on location.result should be include view details along with the fare and cab type.details tab should include cab name ,driver name , cab registration number,time taken to reach out the location of customer.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Search bar should input with alphanumericals,on typing each letter it should  show cabs that matches the corresponding letter and touching them it will search for corresponding cab,if there is no match alert with message "no match found"\par
+{\pntext\f2\'B7\tab}a clear icon for clearing searches\par
+{\pntext\f2\'B7\tab}By tapping a specific result ,it should navigate to new page where the cab with details(cab type,name,registration number,route,time),\par
+
+\pard\sa200\sl276\slmult1 BOOKING :\ul\par
+\ulnone After checking the number of cab available the customers can  book a cab according to their requirements,customers can view the cab timing and the time taken to reach the destination,cab type,cab registration number ,OTP,Driver details.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 it should contains info about:\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1 A text field to enter pickup location\par
+{\pntext\f0 2.\tab}A text field to enter destination location\par
+{\pntext\f0 3.\tab}A button to select cab over respective cabs after selecting navigate to a page with details:\par
+
+\pard\li1704\sa200\sl276\slmult1\tx994 calculated fare\par
+time taken to reaching pick up location\par
+time needed to arrive the destination\par
+driver details\par
+OTP send to user phone number\par
+
+\pard\li426\sa200\sl276\slmult1 4.        A payment button\par
+5.      A cancel button to clear all and to navigate back\par
+
+\pard\sa200\sl276\slmult1 PAYMENT :\par
+After booking  customer will  be redirected to the payment gateway ,there they can choose the mode of payment such as debit/credit cards ,BHIM upi etc. after payment, invoice will be send through registered E-mail id of customers.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 A text field to enter  user debit/credit card details,if the card is invalid alert with message "invalid card"\par
+
+\pard 
+{\pntext\f0 i.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pnlcrm{\pntxta.}}
+\fi-284\li1420\sa200\sl276\slmult1 A mm/yy field to enter card expiry date\par
+{\pntext\f0 ii.\tab}A field to enter CVV number\par
+{\pntext\f0 iii.\tab}A submit button to validate all the details entered is correct or not,if they were not alert with message "wrong credentials",or if any payment related issue alert with message "payment failed try again"\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 A text field to entering BHIM UPI id,validate the id ,if it is correct send payment request should be sended to corresponding upi app,if its done ,alert with message "payment successful" otherwise\b0\fs24\lang1033 ,\b\fs22\lang9  alert with message "payment failed try again"\par
+
+\pard\sa200\sl276\slmult1 CANCELATION :\par
+
+\pard\sa200\sl276\slmult1  Through this page user must able to cancel the booking.Once you click on the cancel button it cancel ride but a charge will genenertad as the processing fee.\par
+\ul\i CAB MASTER FUNCTIONS :\par
+\i0 REGISTER\par
+\ulnone A driver can register by giving his\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 firstname\par
+{\pntext\f2\'B7\tab}lastname\par
+{\pntext\f2\'B7\tab}email id\par
+{\pntext\f2\'B7\tab}phone number\par
+{\pntext\f2\'B7\tab}password \par
+{\pntext\f2\'B7\tab}Aadhar number\par
+{\pntext\f2\'B7\tab}license number\par
+{\pntext\f2\'B7\tab}type of vehicle\par
+{\pntext\f2\'B7\tab}vehicle registration document -upload file\par
+
+\pard\sa200\sl276\slmult1 After clicking register button it validates all data entered ,if it is valid or not,if it is not ask to enter again.\par
+RIDE DETAILS PAGE:\par
+Through this page the driver enable to see ride details such as the destination the user needs to go,the pickup point of the user,time of the journey ,as well as the amount the user payed to him.It may include the colunm such as: \par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1  Destination \par
+{\pntext\f2\'B7\tab}  Pick up point \par
+{\pntext\f2\'B7\tab}  Time\par
+{\pntext\f2\'B7\tab}  payment \par
+
+\pard\sa200\sl276\slmult1 .Admin \par
+Login Page \par
+  This requirement is primarily for the system admin module. Users will be asked to enter their valid username and password to be authenticated into the admin dashboard. \par
+\f1\u10625?\f0 The user clicks on the admin login option. \par
+\f1\u10625?\f0 The system displays the admin login page. \par
+\f1\u10625?\f0 The user supplies username and password and clicks on the \ldblquote login\rdblquote  button. \par
+\f1\u10625?\f0 The system authenticates the user \par
+\f1\u10625?\f0 The system displays the admin dashboard upon successful authentication \par
+Search Facility \par
+This feature shall allow a user to search for a facility using different search      parameters. The user can search facilities by driver,User.                 \par
+\f1\u10625?\f0 The user clicks on the Facility List menu item. \par
+\f1\u10625?\f0 The system loads all details of usrs or drivers using a blind search. \par
+\f1\u10625?\f0 The user selects the Driver/User or types in the facility name and then clicks on the search button. \par
+\f1\u10625?\f0 The system displays a list of usrs or drivers s based on the search criteria. \par
+\f1\u10625?\f0 The user clicks on the \ldblquote Download CSV\rdblquote  (\ldblquote CSV\rdblquote  refers to comma-separated values) button to download the searched result. \par
+Log Out \par
+This feature is to enable users who have logged in to the system to log out of it. \lang9\par
+
+\pard\sa200\sl276\slmult1\par
+\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1\ul\par
+\par
+\par
+\par
+}
+ 
